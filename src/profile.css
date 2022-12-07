@@ -1,0 +1,27 @@
+.profile{
+   width: 90%;
+   max-width: 400px;
+   padding: 20px;
+   text-align: left;
+  }
+
+
+.profile p {
+  text-align: top;
+}
+
+.profile > span{
+  color: rgb(1, 8, 24);
+  margin-top: 30px;
+  cursor: pointer;
+}
+div {
+  text-align:center;
+  width:100%;
+}
+div > iframe{
+  width: 400px;
+}
+body {
+  background-color: #5F9EA0;
+}
