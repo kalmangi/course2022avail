@@ -11,11 +11,16 @@ import {onAuthStateChanged} from 'firebase/auth'
 import PrivateRoute from './PrivateRoute'
 import {Navigate} from 'react-router-dom'
 
+
 function App() {
 
   const [currentUser, setCurrentUser] = useState(null)
   const [timeActive, setTimeActive] = useState(false)
  
+
+  // const analytics = useCallback(() => {
+  //   trackPathForAnalytics({ path: pathname, search: search, title: pathname.split("/")[1] });
+  // }, [pathname, search]);
 
   useEffect(() => {
     
