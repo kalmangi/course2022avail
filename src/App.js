@@ -10,19 +10,12 @@ import {auth} from './firebase'
 import {onAuthStateChanged} from 'firebase/auth'
 import PrivateRoute from './PrivateRoute'
 import {Navigate} from 'react-router-dom'
-import { useLocation } from "react-router";
-// import {trackPathForAnalytics} from "./TrackPageForAnalytics.js";
-import { useCallback } from 'react';
 
 function App() {
 
   const [currentUser, setCurrentUser] = useState(null)
   const [timeActive, setTimeActive] = useState(false)
  
-
-  // const analytics = useCallback(() => {
-  //   trackPathForAnalytics({ path: pathname, search: search, title: pathname.split("/")[1] });
-  // }, [pathname, search]);
 
   useEffect(() => {
     
